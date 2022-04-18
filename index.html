@@ -5,70 +5,129 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>VG</title>
-    <link rel="stylesheet" href="tailwind.css" />
+
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;600&family=Red+Hat+Display:wght@700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400;500&display=swap"
       rel="stylesheet"
     />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="css/styles.css" />
   </head>
-  <body class="bg-body text-white font-poppins pb-12">
-    <nav class="py-6">
-      <div
-        class="container flex justify-between items-center mx-auto px-8 md:px-14 lg:px-24 w-full"
-      >
-        <div class="text-lg font-bold">Valentina.giusti</div>
-        <div class="hidden md:flex space-x-12 items-center">
-          <a class="text-selected-text" href="#">Home</a>
-          <a href="#work">My Projects</a>
-          <button class="mx-10 px-6 py-2 bg-theme font-bold">
-            <a href="#hire">Hire Me</a>
-          </button>
-        </div>
-        <div class="md:hidden">
-          <button class="mobile-menu-button">
-            <img
-              src="/images/9851132801553239378.svg"
-              width="50rem"
-              alt="hamburguer"
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-dark">
+      <div class="container">
+        <a class="navbar-brand text-white" href="#">Valentina</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active text-white" aria-current="page" href="#"
+                >Home</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white" href="#">Skills</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle text-white"
+                href="#"
+                id="navbarDropdown"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Projects
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item" href="#">Action</a></li>
+                <li><a class="dropdown-item" href="#">Another action</a></li>
+                <li><hr class="dropdown-divider" /></li>
+                <li>
+                  <a class="dropdown-item" href="#">Something else here</a>
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white">About Me</a>
+            </li>
+          </ul>
+          <form class="d-flex">
+            <input
+              class="form-control me-2"
+              type="search"
+              placeholder="Search"
+              aria-label="Search"
             />
-          </button>
-          <div class="hidden mobile-menu">
-            <ul class="">
-              <li class="active">
-                <a
-                  href="index.html"
-                  class="block text-sm px-2 py-4 text-white bg-white-500 font-semibold"
-                  >Home</a
-                >
-              </li>
-              <li>
-                <a
-                  href="#services"
-                  class="block text-sm px-2 py-4 hover:bg-white-500 transition duration-300"
-                  >Services</a
-                >
-              </li>
-              <li>
-                <a
-                  href="#about"
-                  class="block text-sm px-2 py-4 hover:bg-white-500 transition duration-300"
-                  >About</a
-                >
-              </li>
-              <li>
-                <a
-                  href="#contact"
-                  class="block text-sm px-2 py-4 hover:bg-white-500 transition duration-300"
-                  >Contact Us</a
-                >
-              </li>
-            </ul>
-          </div>
+            <button class="btn btn-outline-success" type="submit">
+              Search
+            </button>
+          </form>
         </div>
       </div>
     </nav>
+    <div class="image-background">
+      <div class="page-wrapper text-center">
+        <img
+          class="rounded-circle border author-profile"
+          src="/images/IMG_9500.png"
+          width="200rem"
+          alt=""
+        />
+        <h1 class="fs-4 mt-4 fw-bold text-white">VALENTINA GIUSTI</h1>
+        <h2 class="fs-6 text-white">FULL STACK DEVELOPER</h2>
+      </div>
+      <div class="page-bg"></div>
+
+      <div class="animation-wrapper">
+        <div class="particle particle-1"></div>
+        <div class="particle particle-2"></div>
+        <div class="particle particle-3"></div>
+        <div class="particle particle-4"></div>
+      </div>
+    </div>
+    <div>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut similique
+        cupiditate ut nulla perferendis voluptas, nobis fugiat eum voluptate.
+        Voluptas eveniet aperiam at recusandae! Exercitationem optio officiis
+        unde explicabo sit!
+      </p>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut similique
+        cupiditate ut nulla perferendis voluptas, nobis fugiat eum voluptate.
+        Voluptas eveniet aperiam at recusandae! Exercitationem optio officiis
+        unde explicabo sit!
+      </p>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut similique
+        cupiditate ut nulla perferendis voluptas, nobis fugiat eum voluptate.
+        Voluptas eveniet aperiam at recusandae! Exercitationem optio officiis
+        unde explicabo sit!
+      </p>
+    </div>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+      crossorigin="anonymous"
+    ></script>
     <script src="/js/app.js"></script>
   </body>
 </html>
