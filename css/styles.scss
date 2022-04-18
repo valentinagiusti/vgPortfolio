@@ -22,12 +22,19 @@ $time-4: 600s;
 
 /* Styles */
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: "Montserrat", sans-serif;
 }
 
 nav {
   z-index: 100;
+}
+p {
+  text-align: justify;
 }
 
 .image-background {
@@ -41,6 +48,16 @@ nav {
   background-size: cover;
   z-index: -1;
 }
+.background-white {
+  /*  background: no-repeat; */
+  height: 100vh;
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-size: cover;
+  z-index: -1;
+}
+
 /*  {
   margin: auto;
 } */

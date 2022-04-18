@@ -19,9 +19,16 @@
       crossorigin="anonymous"
     />
     <link rel="stylesheet" href="css/styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
   </head>
   <body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-dark">
+    <nav class="navbar navbar-expand-lg navbar-light bg-dark fixed-top">
       <div class="container">
         <a class="navbar-brand text-white" href="#">Valentina</a>
         <button
@@ -43,7 +50,15 @@
               >
             </li>
             <li class="nav-item">
-              <a class="nav-link text-white" href="#">Skills</a>
+              <a
+                class="nav-link active text-white"
+                aria-current="page"
+                href="#about"
+                >About Me</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white" href="#skills">Skills</a>
             </li>
             <li class="nav-item dropdown">
               <a
@@ -65,24 +80,12 @@
                 </li>
               </ul>
             </li>
-            <li class="nav-item">
-              <a class="nav-link text-white">About Me</a>
-            </li>
           </ul>
-          <form class="d-flex">
-            <input
-              class="form-control me-2"
-              type="search"
-              placeholder="Search"
-              aria-label="Search"
-            />
-            <button class="btn btn-outline-success" type="submit">
-              Search
-            </button>
-          </form>
         </div>
       </div>
     </nav>
+    <!-- HOME BACKGROUND  -->
+
     <div class="image-background">
       <div class="page-wrapper text-center">
         <img
@@ -93,6 +96,12 @@
         />
         <h1 class="fs-4 mt-4 fw-bold text-white">VALENTINA GIUSTI</h1>
         <h2 class="fs-6 text-white">FULL STACK DEVELOPER</h2>
+        <a href="https://www.linkedin.com/in/valentinamgo/" className="me-2">
+          <i class="fa-brands fa-linkedin fs-2 text-white"></i>
+        </a>
+        <a href="https://github.com/valentinagiusti">
+          <i class="fa-brands fa-github fs-2 text-white"></i>
+        </a>
       </div>
       <div class="page-bg"></div>
 
@@ -103,25 +112,133 @@
         <div class="particle particle-4"></div>
       </div>
     </div>
-    <div>
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut similique
-        cupiditate ut nulla perferendis voluptas, nobis fugiat eum voluptate.
-        Voluptas eveniet aperiam at recusandae! Exercitationem optio officiis
-        unde explicabo sit!
-      </p>
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut similique
-        cupiditate ut nulla perferendis voluptas, nobis fugiat eum voluptate.
-        Voluptas eveniet aperiam at recusandae! Exercitationem optio officiis
-        unde explicabo sit!
-      </p>
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut similique
-        cupiditate ut nulla perferendis voluptas, nobis fugiat eum voluptate.
-        Voluptas eveniet aperiam at recusandae! Exercitationem optio officiis
-        unde explicabo sit!
-      </p>
+    <!-- ABOUT ME -->
+    <div id="about" class="background-white">
+      <div class="container p-5 slide-carousel">
+        <h3 class="text-center d-none">About me</h3>
+        <h4 class="fst-italic text-center fs-5 mt-5">My story</h4>
+        <p class="mt-5">
+          My name is Valentina Giusti and I’’m from Montevideo, Uruguay. I just
+          finished a coding bootcamp which is a short-term, full-time intensive
+          training program that teaches practical and job-ready tech skills with
+          around 600 hours of theorical-practical lessons.
+        </p>
+        <p>
+          I studied architecture for the past 5 years, and while I loved
+          studying it I couldn’t picture myself being an architect. I discovered
+          a new passion for programming last year during the covid lockdown,
+          specially for front-end design, and I’m now looking for my first
+          web-developer job experience.
+        </p>
+        <p class="sm-d-none" id="skills">
+          I love travelling and meeting people from around the world! I’ve been
+          lucky to travel and lived abroad one year in Italy. I’m fluent in
+          english, italian and spanish, and know the basics of portuguese.
+        </p>
+        <h4 class="fst-italic text-center fs-5 my-5">My coding skills</h4>
+        <div class="d-flex flex-row justify-content-center row">
+          <div class="d-flex flex-row justify-content-between col-md-4 my-3">
+            <div class="d-flex flex-column text-center">
+              <i class="fa-brands fa-html5 fs-2"></i><span>HTML</span>
+            </div>
+            <div class="d-flex flex-column text-center mx-2">
+              <i class="fa-brands fa-css3 fs-2"></i><span>CSS</span>
+            </div>
+            <div class="d-flex flex-column text-center mx-2">
+              <i class="fa-brands fa-js fs-2"></i><span>JavaScript</span>
+            </div>
+          </div>
+          <div class="d-flex flex-row justify-content-between col-md-4 my-3">
+            <div class="d-flex flex-column text-center mx-2">
+              <i class="fa-brands fa-react fs-2"></i><span>React.js</span>
+            </div>
+            <div class="d-flex flex-column text-center mx-2">
+              <i class="fa-solid fa-table fs-2"></i><span>MySQL</span>
+            </div>
+            <div class="d-flex flex-column text-center mx-2">
+              <i class="fa-solid fa-table fs-2"></i><span>MongoDB</span>
+            </div>
+          </div>
+          <div class="d-flex flex-row justify-content-between col-md-4 my-3">
+            <div class="d-flex flex-column text-center mx-2">
+              <i class="fa-brands fa-git fs-2"></i><span>Git</span>
+            </div>
+
+            <div class="d-flex flex-column text-center mx-2">
+              <i class="fa-brands fa-node fs-2"></i><span>Node.js</span>
+            </div>
+            <div class="d-flex flex-column text-center mx-2">
+              <i class="fa-brands fa-sass fs-2"></i><span>Sass</span>
+            </div>
+          </div>
+        </div>
+        <h4 class="fst-italic text-center fs-5 my-5">My design skills</h4>
+        <div class="d-flex flex-row justify-content-center row">
+          <div class="d-flex flex-row justify-content-between col-md-4 my-3">
+            <div class="d-flex flex-column text-center">
+              <i class="fa-brands fa-ai fs-2"></i><span>Ai</span>
+            </div>
+            <div class="d-flex flex-column text-center mx-2">
+              <i class="fa-brands fa-ps fs-2"></i><span>Ps</span>
+            </div>
+            <div class="d-flex flex-column text-center mx-2">
+              <i class="fa-brands fa-js fs-2"></i><span>JavaScript</span>
+            </div>
+          </div>
+          <div class="d-flex flex-row justify-content-between col-md-4 my-3">
+            <div class="d-flex flex-column text-center mx-2">
+              <i class="fa-brands fa-react fs-2"></i><span>React.js</span>
+            </div>
+            <div class="d-flex flex-column text-center mx-2">
+              <i class="fa-solid fa-table fs-2"></i><span>MySQL</span>
+            </div>
+            <div class="d-flex flex-column text-center mx-2">
+              <i class="fa-solid fa-table fs-2"></i><span>MongoDB</span>
+            </div>
+          </div>
+          <div class="d-flex flex-row justify-content-between col-md-4 my-3">
+            <div class="d-flex flex-column text-center mx-2">
+              <i class="fa-brands fa-git fs-2"></i><span>Git</span>
+            </div>
+
+            <div class="d-flex flex-column text-center mx-2">
+              <i class="fa-brands fa-node fs-2"></i><span>Node.js</span>
+            </div>
+            <div class="d-flex flex-column text-center mx-2">
+              <i class="fa-brands fa-sass fs-2"></i><span>Sass</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="projects" class="background-white container">
+      <h2 class="text-center my-5">MY PROJECTS</h2>
+      <div class="d-flex flex-row container">
+        <img
+          class="d-none d-md-block"
+          width="300rem"
+          src="https://azioqgupehjwofkjwddr.supabase.co/storage/v1/object/public/e-commerce/products/mesa-de-centro-imageenvironment.png"
+          alt=""
+        />
+
+        <div class="d-flex flex-column p-5">
+          <a class="text-decoration-none" href="https://hack-home.vercel.app/">
+            <h4 class="fst-italic fs-5 text-dark">Hack Home</h4></a
+          >
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem
+            odio velit voluptatum sit voluptas, ducimus alias labore rerum
+            dolorem suscipit quisquam. Dolorem, magni mollitia quidem enim amet
+            quis facilis exercitationem!
+          </p>
+          <a
+            class="btn btn-dark rounded-pill w-25"
+            href="https://hack-home.vercel.app/"
+            >Visit</a
+          >
+        </div>
+      </div>
     </div>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
