@@ -33,6 +33,11 @@ body {
 nav {
   z-index: 100;
 }
+
+.nav-link {
+  font-size: 0.8rem;
+}
+
 p {
   text-align: justify;
 }
@@ -71,10 +76,19 @@ p {
 } */
 
 .author-profile {
-  z-index: 200;
+  z-index: 1000;
   text-align: center;
   color: #fff;
-  margin-top: 15%;
+}
+
+#presentation {
+  margin-top: 5rem;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+  text-align: center;
+  z-index: 500;
 }
 
 .particle,

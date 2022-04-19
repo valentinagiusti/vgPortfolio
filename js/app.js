@@ -1,6 +1,13 @@
-const btn = document.querySelector("button.mobile-menu-button");
-const menu = document.querySelector(".mobile-menu");
+const navbar = document.querySelector("#navbar-page");
 
-btn.addEventListener("click", () => {
-  menu.classList.toggle("hidden");
-});
+console.log(navbar);
+
+console.log("hola");
+window.onscroll = function () {
+  // pageYOffset or scrollY
+  if (window.pageYOffset > 0) {
+    navbar.classList.add("bg-dark");
+  } else {
+    navbar.classList.remove("bg-dark");
+  }
+};
