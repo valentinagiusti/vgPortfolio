@@ -33,9 +33,11 @@
     <link rel="stylesheet" href="css/styles.css" />
   </head>
   <body>
-    <nav id="navbar-page" class="navbar navbar-expand-md navbar-dark fixed-top">
-      <div class="container">
-        <a class="navbar-brand me-5" href="#">Valentina</a>
+    <nav
+      id="navbar-page"
+      class="navbar navbar-expand-md navbar-dark fixed-top text-center"
+    >
+      <div class="container text-center">
         <button
           class="navbar-toggler"
           type="button"
@@ -47,9 +49,12 @@
         >
           <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <div class="d-flex justify-content-end">
-            <ul class="navbar-nav mb-2 mb-lg-0 mt-2 mx-5">
+        <div
+          class="collapse navbar-collapse text-center"
+          id="navbarSupportedContent"
+        >
+          <div class="text-center">
+            <ul class="navbar-nav mb-2 mb-lg-0 mt-2 mx-5 text-center">
               <li class="nav-item">
                 <a class="nav-link text-white" aria-current="page" href="/"
                   >Home</a
@@ -78,16 +83,15 @@
 
     <!-- HOME BACKGROUND  -->
     <div class="text-center position-absolute" id="presentation">
-      <h1 class="fs-3 text-white mb-4">Hi! This is Valentina Giusti</h1>
+      <h1 class="fs-3 text-white mb-2">Hi! This is Valentina Giusti</h1>
       <img
         class="rounded-circle border author-profile mx-2"
         src="/images/IMG_9500.png"
         width="300rem"
         alt=""
       />
-      <h2></h2>
 
-      <h2 class="fs-1 my-4 text-white">FULL STACK DEVELOPER</h2>
+      <h3 class="fs-1 my-4 text-white">FULL STACK DEVELOPER</h3>
       <a
         target="_blank"
         href="https://www.linkedin.com/in/valentinamgo/"
@@ -119,7 +123,7 @@
     <div id="about">
       <div class="container slide-carousel">
         <h3 class="text-center d-none">About me</h3>
-        <h4 class="fst-italic text-center fs-2 mt-5 mb-3">My story</h4>
+        <h2 class="fw-bold text-center fs-2">My story</h2>
 
         <div class="row gx-4">
           <div class="col-md-6">
@@ -157,8 +161,7 @@
       </div>
     </div>
     <div class="container">
-      <h4 class="fst-italic text-center fs-2 mt-5 mb-3">Coding skills</h4>
-      <hr />
+      <h2 class="fw-bold text-center fs-2">Coding skills</h2>
     </div>
 
     <!-- SERVICES -->
@@ -181,7 +184,7 @@
                 ></span>
               </div>
               <div class="service-content">
-                <h2 class="s-title">Front-End</h2>
+                <h3 class="s-title">Front-End</h3>
                 <p class="s-description">
                   Layout design of your page with
                   <span class="fw-bold">HTML</span>,
@@ -202,7 +205,7 @@
                 ></span>
               </div>
               <div class="service-content">
-                <h2 class="s-title">Back-End</h2>
+                <h3 class="s-title">Back-End</h3>
                 <p class="s-description">
                   For the Back-End I use
                   <span class="fw-bold">Node.js</span>, with a relational
@@ -220,7 +223,7 @@
                 ></span>
               </div>
               <div class="service-content">
-                <h2 class="s-title">UX/UI</h2>
+                <h3 class="s-title">UX/UI</h3>
                 <p class="s-description">
                   I am currently doing a
                   <span class="fw-bold">UX/UI</span> design course to improve
@@ -321,24 +324,17 @@
       </div>
     </div>
 
-    <div id="projects" class="container">
-      <h4 class="fst-italic fs-5 mt-5 mb-3">MY PROJECTS</h4>
-      <div class="card-group">
+    <div id="projects" class="container my-5">
+      <h3 class="fst-italic fs-3 text-center mt-5 mb-3">My projects</h3>
+      <div class="card-group mt-5">
         <div class="card">
           <img src="/images/hack-home.png" class="card-img-top" alt="..." />
           <div class="card-body">
-            <h5 class="card-title">Hack-Home</h5>
-            <p class="card-text">
-              It's an e-commerce I made along two other classmates from the
-              bootcamp. We finished it in three weeks, designed the Front-End
-              with React.js and the Backend with Node.js and React.js. Visit it
-              to learn more about the technologies we used.
-            </p>
             <p class="card-text">
               <a
                 target="_blank"
                 href="https://hack-home.vercel.app/"
-                class="btn btn-outline-dark"
+                class="btn btn-outline-dark w-100"
                 >Go to Hack Home</a
               >
             </p>
@@ -351,16 +347,10 @@
             alt="..."
           />
           <div class="card-body">
-            <h5 class="card-title">Admin Hack-Home</h5>
-            <p class="card-text">
-              Web app created to manipulate Back-End data from Hack-Home. We
-              used Supabase which holds a Postgres database where we keep our
-              data.
-            </p>
             <p class="card-text">
               <a
                 target="_blank"
-                class="btn btn-outline-dark"
+                class="btn btn-outline-dark w-100"
                 href="https://e-commerce-front-end-admin.vercel.app/"
                 >Go to Admin Hack Home</a
               >
@@ -374,17 +364,11 @@
             alt="..."
           />
           <div class="card-body">
-            <h5 class="card-title">Hack-flix</h5>
-            <p class="card-text">
-              Movie app build with React.js where the data is obtained from an
-              external API.
-            </p>
             <p class="card-text">
               <a
                 target="_blank"
-                class="btn btn-outline-dark"
+                class="btn btn-outline-dark w-100"
                 href="https://hackflix-vale.vercel.app/"
-                class="btn btn-primary"
                 >Go to Hack-flix</a
               >
             </p>
@@ -394,9 +378,77 @@
     </div>
 
     <div class="container">
-      <h4 class="fst-italic text-center fs-2 mt-5 mb-3">Design Skills</h4>
-      <hr />
+      <h2 class="fw-bold text-center fs-2mb-3">Design Skills</h2>
     </div>
+    <section id="services" class="services-mf pt-5 route">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-12">
+            <div class="title-box text-center">
+              <div class="line-mf"></div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-4">
+            <div class="service-box">
+              <div class="service-ico">
+                <span class="ico-circle"
+                  ><i class="fa-solid fa-sitemap"></i
+                ></span>
+              </div>
+              <div class="service-content">
+                <h3 class="s-title">Illustration and page layout</h3>
+                <p class="s-description">
+                  Layout design of your page with
+                  <span class="fw-bold">HTML</span>,
+                  <span class="fw-bold">CSS</span>,
+                  <span class="fw-bold">Sass</span> and
+                  <span class="fw-bold">JavaScript(E6)</span>. For more complex
+                  websites I also use <span class="fw-bold">React.js</span>. Web
+                  sites 100% <span class="fw-bold">responsive</span>.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="service-box">
+              <div class="service-ico">
+                <span class="ico-circle"
+                  ><i class="fa-solid fa-cubes"></i
+                ></span>
+              </div>
+              <div class="service-content">
+                <h3 class="s-title">3D Model and rendering</h3>
+                <p class="s-description">
+                  For the Back-End I use
+                  <span class="fw-bold">Node.js</span>, with a relational
+                  database (<span class="fw-bold">MySQL</span>) or a
+                  non-relational one(<span class="fw-bold">MongoDB</span>).
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="service-box">
+              <div class="service-ico">
+                <span class="ico-circle"
+                  ><i class="fa-solid fa-house-user"></i
+                ></span>
+              </div>
+              <div class="service-content">
+                <h3 class="s-title">Real life models</h3>
+                <p class="s-description">
+                  I am currently doing a
+                  <span class="fw-bold">UX/UI</span> design course to improve
+                  the user experience in my web applications.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
     <div class="container">
       <div class="coding-skills">
         <div class="row text-center">
@@ -482,6 +534,51 @@
               />
               <p class="text-center">DIALux</p>
             </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="projects" class="container my-5">
+      <h3 class="fst-italic fs-3 text-center mt-5 mb-3">My projects</h3>
+      <div class="card-group mt-5">
+        <div class="card">
+          <img src="/images/juan-lacaze.png" class="card-img-top" alt="..." />
+          <div class="card-body">
+            <p class="card-text">
+              <a
+                target="_blank"
+                href="https://ptetallerapolo.wixsite.com/juanlacaze/copia-de-vale-natalie"
+                class="btn btn-outline-dark w-100"
+                >Go to Motherboard project</a
+              >
+            </p>
+          </div>
+        </div>
+        <div class="card">
+          <img src="/images/danza-01.png" class="card-img-top" alt="..." />
+          <div class="card-body">
+            <p class="card-text">
+              <a
+                target="_blank"
+                class="btn btn-outline-dark w-100"
+                href="https://entregadetalleres.fadu.edu.uy/camila-cia-2/"
+                >Go to Cultural Center project</a
+              >
+            </p>
+          </div>
+        </div>
+        <div class="card">
+          <img src="/images/museo-01.png" class="card-img-top" alt="..." />
+          <div class="card-body">
+            <p class="card-text">
+              <a
+                target="_blank"
+                class="btn btn-outline-dark w-100"
+                href="https://issuu.com/valentinagiusti5"
+                >See more projects</a
+              >
+            </p>
           </div>
         </div>
       </div>

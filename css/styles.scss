@@ -57,6 +57,19 @@ p {
   z-index: 200;
 }
 
+@media (min-width: 600px) {
+  h2 {
+    margin-top: 15rem;
+    margin-bottom: 6rem;
+  }
+}
+
+@media (max-width: 599px) {
+  h2 {
+    margin-top: 2rem;
+  }
+}
+
 .image-background {
   background-image: url(/images/Explore-Italy-Attraction-Cortina-Cristallo-Mountain-with-Snow.png);
   /*  background: no-repeat; */
