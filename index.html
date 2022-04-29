@@ -23,7 +23,6 @@
       rel="stylesheet"
     />
 
-    <link rel="stylesheet" href="css/styles.css" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
@@ -31,6 +30,7 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+    <link rel="stylesheet" href="css/styles.css" />
   </head>
   <body>
     <nav id="navbar-page" class="navbar navbar-expand-md navbar-dark fixed-top">
@@ -59,7 +59,10 @@
                 <a class="nav-link text-white" href="#about">About me</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link text-white" href="#skills">Skills</a>
+                <a class="nav-link text-white" href="#skills">Coding skills</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-white" href="#skills">Design skills</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link text-white" href="#projects">My projects</a>
@@ -154,7 +157,7 @@
       </div>
     </div>
     <div class="container">
-      <h4 class="fst-italic text-center fs-2 mt-5 mb-3">Skills</h4>
+      <h4 class="fst-italic text-center fs-2 mt-5 mb-3">Coding skills</h4>
       <hr />
     </div>
 
@@ -165,7 +168,6 @@
         <div class="row">
           <div class="col-sm-12">
             <div class="title-box text-center">
-              <h3 class="title-a">My services</h3>
               <div class="line-mf"></div>
             </div>
           </div>
@@ -174,7 +176,9 @@
           <div class="col-md-4">
             <div class="service-box">
               <div class="service-ico">
-                <span class="ico-circle"><i class="bi bi-briefcase"></i></span>
+                <span class="ico-circle"
+                  ><i class="fa-solid fa-file-code"></i
+                ></span>
               </div>
               <div class="service-content">
                 <h2 class="s-title">Front-End</h2>
@@ -194,7 +198,7 @@
             <div class="service-box">
               <div class="service-ico">
                 <span class="ico-circle"
-                  ><i class="bi bi-card-checklist"></i
+                  ><i class="fa-solid fa-database"></i
                 ></span>
               </div>
               <div class="service-content">
@@ -211,14 +215,16 @@
           <div class="col-md-4">
             <div class="service-box">
               <div class="service-ico">
-                <span class="ico-circle"><i class="bi bi-bar-chart"></i></span>
+                <span class="ico-circle"
+                  ><i class="fa-solid fa-face-smile"></i
+                ></span>
               </div>
               <div class="service-content">
                 <h2 class="s-title">UX/UI</h2>
                 <p class="s-description">
                   I am currently doing a
-                  <span class="fw-bold">UX/UI</span> design course to improve my
-                  web applications.
+                  <span class="fw-bold">UX/UI</span> design course to improve
+                  the user experience in my web applications.
                 </p>
               </div>
             </div>
@@ -227,6 +233,93 @@
       </div>
     </section>
     <!-- End Services Section -->
+    <div class="container">
+      <div class="coding-skills">
+        <div class="row text-center">
+          <div class="col-md-4">
+            <div class="d-flex flex-column mb-5">
+              <i class="fa-brands fa-html5 fa-6x"></i> <span>HTML</span>
+            </div>
+            <div class="d-flex flex-column my-5">
+              <i class="fa-brands fa-css3 fa-6x"></i>
+              <span>CSS</span>
+            </div>
+            <div class="d-flex flex-column my-5">
+              <i class="fa-brands fa-js fa-6x"></i>
+              <span>JavaScript(E6+)</span>
+            </div>
+            <div class="d-flex flex-column my-5">
+              <i class="fa-brands fa-sass fa-6x"></i>
+              <span>Sass</span>
+            </div>
+            <div class="d-flex flex-column my-5">
+              <i class="fa-brands fa-react fa-6x"></i>
+              <span>React.js</span>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="d-flex flex-column mb-5">
+              <i class="fa-brands fa-node fa-6x"></i>
+              <span>Node.js</span>
+            </div>
+            <div class="my-5">
+              <img
+                class="fa-6x"
+                src="/images/icons/mysql-1.svg"
+                height="120rem"
+                alt=""
+              />
+              <p class="text-center">MySQL</p>
+            </div>
+            <div class="my-5">
+              <img
+                class="mt-5"
+                src="/images/icons/black.png"
+                height="40rem"
+                alt=""
+              />
+              <p class="text-center">MongoDB</p>
+            </div>
+
+            <div class="d-flex flex-column my-5">
+              <i class="fa-brands fa-git fa-6x mt-3"></i><span>Git</span>
+            </div>
+            <div class="my-5">
+              <img height="40rem" src="/images/icons/jwt.svg" alt="" />
+              <p class="text-center mt-3">JWT</p>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="mb-5">
+              <img
+                class="mt-3"
+                src="/images/icons/redux.png"
+                height="90rem"
+                alt=""
+              />
+              <p class="text-center">Redux</p>
+            </div>
+            <div class="my-5">
+              <i class="fa-brands fa-bootstrap fa-6x"></i>
+              <p class="text-center">Bootstrap v5.1</p>
+            </div>
+            <div class="my-5">
+              <img
+                class="mt-3"
+                src="/images/icons/137-1379124_mongoose-js-logo-mongoose-odm-01.png"
+                alt=""
+                height="80rem"
+              />
+              <p class="text-center">Mongoose ODM</p>
+            </div>
+            <div class="my-5">
+              <img src="/images/icons/sequelize.png" alt="" height="100rem" />
+              <p class="text-center">Sequelize ORM</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
 
     <div id="projects" class="container">
       <h4 class="fst-italic fs-5 mt-5 mb-3">MY PROJECTS</h4>
@@ -299,6 +392,101 @@
         </div>
       </div>
     </div>
+
+    <div class="container">
+      <h4 class="fst-italic text-center fs-2 mt-5 mb-3">Design Skills</h4>
+      <hr />
+    </div>
+    <div class="container">
+      <div class="coding-skills">
+        <div class="row text-center">
+          <div class="col-md-4">
+            <div class="text-center mb-5">
+              <img class="mb-3" width=100rem" src="/images/icons/autocad.png"
+              alt="">
+              <p class="text-center">AutoCAD</p>
+            </div>
+            <div class="my-5">
+              <img
+                class="text-center"
+                src="/images/icons/photoshop.png"
+                width="100rem"
+                alt=""
+              />
+              <p class="text-center mt-3">Adobe Photoshop</p>
+            </div>
+            <div class="my-5">
+              <img
+                class="text-center"
+                src="/images/icons/illustrator.png"
+                width="100rem"
+                alt=""
+              />
+              <p class="text-center mt-3">Adobe Illustrator</p>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="text-center mb-5">
+              <img
+                class="text-center"
+                src="/images/icons/twinmotion.png"
+                width="100rem"
+                alt=""
+              />
+              <p class="text-center mt-3">Twinmotion</p>
+            </div>
+            <div class="mt-5">
+              <img
+                class="fa-6x"
+                src="/images/icons/3dmax.png"
+                height="120rem"
+                alt=""
+              />
+              <p class="text-center mt-3">3ds Max</p>
+            </div>
+            <div>
+              <img
+                class="mt-5"
+                src="/images/icons/sketchup.png"
+                height="100rem"
+                alt=""
+              />
+              <p class="text-center mt-2">SketchUp</p>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="mb-5">
+              <img
+                class="mt-3"
+                src="/images/icons/adobe indesign.png"
+                height="90rem"
+                alt=""
+              />
+              <p class="text-center mt-3">Adobe InDesign</p>
+            </div>
+            <div class="my-5">
+              <img
+                class="mt-3"
+                src="/images/icons/revit.png"
+                height="110rem"
+                alt=""
+              />
+              <p class="text-center mt-3">Revit</p>
+            </div>
+            <div class="my-5">
+              <img
+                class="mt-3"
+                src="/images/icons/dx.png"
+                alt=""
+                height="80rem"
+              />
+              <p class="text-center">DIALux</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
     <!-- footer -->
 
     <footer
