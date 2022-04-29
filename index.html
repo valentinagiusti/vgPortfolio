@@ -50,33 +50,69 @@
           <span class="navbar-toggler-icon"></span>
         </button>
         <div
-          class="collapse navbar-collapse text-center"
+          class="collapse navbar-collapse text-center nav justify-content-center"
           id="navbarSupportedContent"
         >
-          <div class="text-center">
-            <ul class="navbar-nav mb-2 mb-lg-0 mt-2 mx-5 text-center">
-              <li class="nav-item">
-                <a class="nav-link text-white" aria-current="page" href="/"
-                  >Home</a
-                >
-              </li>
-              <li class="nav-item">
-                <a class="nav-link text-white" href="#about">About me</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link text-white" href="#skills">Coding skills</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link text-white" href="#skills">Design skills</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link text-white" href="#projects">My projects</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link text-white" href="#footer">Contact Me!</a>
-              </li>
-            </ul>
-          </div>
+          <ul
+            class="navbar-nav mb-2 mb-lg-0 mt-2 mx-5 nav justify-content-center"
+          >
+            <li class="nav-item mx-3">
+              <a class="nav-link text-white" aria-current="page" href="/"
+                >Home</a
+              >
+            </li>
+            <li class="nav-item mx-3">
+              <a class="nav-link text-white" href="#about">About me</a>
+            </li>
+            <li class="nav-item dropdown text-white mx-3">
+              <a
+                class="nav-link dropdown-toggle text-white"
+                href="#"
+                id="navbarDropdown"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Coding
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li>
+                  <a class="dropdown-item" href="#codingskills">Skills</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#codingprojects"
+                    >My projects</a
+                  >
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown mx-3">
+              <a
+                class="nav-link dropdown-toggle text-white"
+                href="#"
+                id="navbarDropdown"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Design
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li>
+                  <a class="dropdown-item" href="#designskills">Skills</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#designprojects"
+                    >My projects</a
+                  >
+                </li>
+              </ul>
+            </li>
+
+            <li class="nav-item mx-3">
+              <a class="nav-link text-white" href="#footer">Contact</a>
+            </li>
+          </ul>
         </div>
       </div>
     </nav>
@@ -118,15 +154,15 @@
         <div class="particle particle-4"></div>
       </div>
     </div>
-
+    <div id="about"></div>
     <!-- ABOUT ME -->
-    <div id="about">
+    <div>
       <div class="container slide-carousel">
         <h3 class="text-center d-none">About me</h3>
         <h2 class="fw-bold text-center fs-2">My story</h2>
 
         <div class="row gx-4">
-          <div class="col-md-6">
+          <div class="col-md-4">
             <p class="mt-5">
               My name is <span class="fw-bold">Valentina Giusti</span> and I’m
               from <span class="fw-bold">Montevideo, Uruguay</span>. I just
@@ -136,13 +172,8 @@
               <span class="fw-bold">600 hours</span> of theorical-practical
               lessons.
             </p>
-            <p>
-              I studied <span class="fw-bold">architecture</span> for the past 5
-              years, and while I loved studying it I couldn’t picture myself
-              being an architect.
-            </p>
           </div>
-          <div class="col-md-6 mt-md-5">
+          <div class="col-md-4 mt-md-5">
             <p>
               I discovered a new passion for programming last year during the
               covid lockdown, specially for front-end design, and I’m now
@@ -150,6 +181,8 @@
                 >looking for my first web-developer job experience</span
               >.
             </p>
+          </div>
+          <div class="col-md-4 mt-md-5">
             <p class="sm-d-none" id="skills">
               I love travelling and meeting people from around the world! I’ve
               been lucky to travel and lived abroad one year in Italy. I’m
@@ -160,11 +193,14 @@
         </div>
       </div>
     </div>
+
+    <!-- CODING SKILLS -->
+
+    <div id="codingskills"></div>
+
     <div class="container">
       <h2 class="fw-bold text-center fs-2">Coding skills</h2>
     </div>
-
-    <!-- SERVICES -->
 
     <section id="services" class="services-mf pt-5 route">
       <div class="container">
@@ -235,7 +271,7 @@
         </div>
       </div>
     </section>
-    <!-- End Services Section -->
+
     <div class="container">
       <div class="coding-skills">
         <div class="row text-center">
@@ -324,7 +360,13 @@
       </div>
     </div>
 
-    <div id="projects" class="container my-5">
+    <!-- End coding skills -->
+
+    <!-- coding projects -->
+
+    <div id="codingprojects" class="mt-5"></div>
+
+    <div class="container my-5">
       <h3 class="fst-italic fs-3 text-center mt-5 mb-3">My projects</h3>
       <div class="card-group mt-5">
         <div class="card">
@@ -377,6 +419,10 @@
       </div>
     </div>
 
+    <!-- end coding projects -->
+    <div id="designskills"></div>
+    <!-- design skills -->
+
     <div class="container">
       <h2 class="fw-bold text-center fs-2mb-3">Design Skills</h2>
     </div>
@@ -400,13 +446,10 @@
               <div class="service-content">
                 <h3 class="s-title">Illustration and page layout</h3>
                 <p class="s-description">
-                  Layout design of your page with
-                  <span class="fw-bold">HTML</span>,
-                  <span class="fw-bold">CSS</span>,
-                  <span class="fw-bold">Sass</span> and
-                  <span class="fw-bold">JavaScript(E6)</span>. For more complex
-                  websites I also use <span class="fw-bold">React.js</span>. Web
-                  sites 100% <span class="fw-bold">responsive</span>.
+                  Layout design of the project with
+                  <span class="fw-bold">Illustrator</span>,
+                  <span class="fw-bold">InDesign</span> and
+                  <span class="fw-bold">Photoshop</span>.
                 </p>
               </div>
             </div>
@@ -421,10 +464,13 @@
               <div class="service-content">
                 <h3 class="s-title">3D Model and rendering</h3>
                 <p class="s-description">
-                  For the Back-End I use
-                  <span class="fw-bold">Node.js</span>, with a relational
-                  database (<span class="fw-bold">MySQL</span>) or a
-                  non-relational one(<span class="fw-bold">MongoDB</span>).
+                  I can use
+                  <span class="fw-bold">AutoCAD 3D, SketchUp</span> or
+                  <span class="fw-bold">Revit</span> to model the project. Then
+                  with <span class="fw-bold">Twinmotion</span> I add materials
+                  and environment to create a realistic render image. With
+                  <span class="fw-bold">Photoshop</span> I retouch the final
+                  details.
                 </p>
               </div>
             </div>
@@ -439,9 +485,10 @@
               <div class="service-content">
                 <h3 class="s-title">Real life models</h3>
                 <p class="s-description">
-                  I am currently doing a
-                  <span class="fw-bold">UX/UI</span> design course to improve
-                  the user experience in my web applications.
+                  I design projects that can adapt to real-life-environments. I
+                  draw the construction plans on AutoCad, and from there I
+                  extend to other technologies and representation according to
+                  the size of the project.
                 </p>
               </div>
             </div>
@@ -449,6 +496,7 @@
         </div>
       </div>
     </section>
+
     <div class="container">
       <div class="coding-skills">
         <div class="row text-center">
@@ -539,7 +587,9 @@
       </div>
     </div>
 
-    <div id="projects" class="container my-5">
+    <!-- design projects -->
+
+    <div id="designprojects" class="container my-5">
       <h3 class="fst-italic fs-3 text-center mt-5 mb-3">My projects</h3>
       <div class="card-group mt-5">
         <div class="card">
@@ -582,6 +632,25 @@
           </div>
         </div>
       </div>
+    </div>
+    <h2 id="contactme" class="fw-bold text-center fs-2">Contact</h2>
+    <div class="container text-center">
+      <ul class="list-unstyled">
+        <li>
+          <i class="fas fa-at fa-fw fa-sm me-2"></i>valentinamgiusti@gmail.com
+        </li>
+        <li>
+          <a
+            class="text-decoration-none text-dark"
+            target="_blank"
+            href="https://www.linkedin.com/in/valentinamgo/"
+            ><i class="fa-brands fa-linkedin fa-fw fa-sm me-2"></i>LinkedIn</a
+          >
+        </li>
+        <li>
+          <i class="fas fa-envelope fa-phone fa-sm me-2"></i>+ 598 98 445 833
+        </li>
+      </ul>
     </div>
 
     <!-- footer -->
