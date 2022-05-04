@@ -1,8 +1,6 @@
 const navbar = document.querySelector("#navbar-page");
+const loader = document.querySelector("#loader");
 
-console.log(navbar);
-
-console.log("hola");
 window.onscroll = function () {
   // pageYOffset or scrollY
   if (window.pageYOffset > 0) {
@@ -11,3 +9,7 @@ window.onscroll = function () {
     navbar.classList.remove("bg-dark");
   }
 };
+
+window.addEventListener("load", function () {
+  loader.style.display = "none";
+});
