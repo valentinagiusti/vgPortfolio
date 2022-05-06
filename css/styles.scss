@@ -74,7 +74,7 @@ p {
 }
 
 .image-background {
-  background-image: url(/images/Explore-Italy-Attraction-Cortina-Cristallo-Mountain-with-Snow.png);
+  background-image: url(/assets/images/Explore-Italy-Attraction-Cortina-Cristallo-Mountain-with-Snow.png);
   /*  background: no-repeat; */
   height: 100vh;
 
@@ -294,7 +294,8 @@ p {
   color: #4e4e4e;
 }
 #loader {
-  background: #000 url(/images/loader.gif) no-repeat center center;
+  background: #000 url(/assets/images/circle-loader-gif-2.gif) no-repeat center
+    center;
   background-size: 15%;
   height: 100vh;
   width: 100%;
