@@ -97,6 +97,7 @@ p {
 .icon-skill {
   height: 50rem;
 }
+
 .navbar-nav > li > .dropdown-menu a:focus {
   background-color: #303030;
 }
@@ -112,18 +113,6 @@ p {
   border: #dadada solid 0.0000001rem;
 }
 
-/*  {
-  margin: auto;
-} */
-
-/* .animation-wrapper {
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  z-index: 1;
-} */
-
 .author-profile {
   z-index: 1000;
   text-align: center;
@@ -131,13 +120,18 @@ p {
 }
 
 #presentation {
-  margin-top: 10rem;
+  margin-top: 5rem;
   margin-left: auto;
   margin-right: auto;
   left: 0;
   right: 0;
   text-align: center;
   z-index: 500;
+}
+@media (min-width: 1500px) {
+  #presentation {
+    margin-top: 15rem;
+  }
 }
 
 .image-projects {
